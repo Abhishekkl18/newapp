@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-
 function Form() {
   const [name, setName] = useState("");
   const [usn, setUsn] = useState("");
@@ -10,10 +9,8 @@ function Form() {
   const [sem, setSem] = useState("");
   const [phone, setPhone] = useState("");
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-
 
     const data = {
       name: name,
@@ -33,10 +30,9 @@ function Form() {
     }
   };
 
-
   return (
     <div>
-      <h2>Add new Student</h2>
+      <h2 className="heading">Add new Student</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-control">
           <label>Student Name</label>
@@ -44,7 +40,6 @@ function Form() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-           
           />
         </div>
         <div className="form-control">
@@ -53,14 +48,13 @@ function Form() {
             type="text"
             value={usn}
             onChange={(e) => setUsn(e.target.value)}
-           
           />
         </div>
         <div className="form-control">
           <label>Branch</label>
           <input
             type="text"
-            value={branch} 
+            value={branch}
             onChange={(e) => setBranch(e.target.value)}
           />
         </div>
@@ -96,4 +90,3 @@ function Form() {
   );
 }
 export default Form;
-

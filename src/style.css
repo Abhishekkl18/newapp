@@ -1,140 +1,150 @@
 /* Import the Caveat font from Google Fonts */
-@import
-url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 /* Apply the Caveat font to the entire document */
+body {
+  background: url("https://thumbs.dreamstime.com/b/design-spiral-dots-backdrop-abstract-monochrome-background-vector-art-illustration-no-gradient-166651446.jpg");
+  background-position: center;
+}
+
+.heading {
+  color: #fff;
+}
 .submit-btn {
-font-family: 'Caveat', cursive;
-font-size:10px;
+  font-family: "Caveat", cursive;
+  font-size: 10px;
 }
 .App {
-height: 100vh;
-padding: 2rem;
+  height: 100vh;
+  padding: 2rem;
 }
 h2 {
-text-align: center;
+  text-align: center;
 }
-a{
-margin-right:10px;
+a {
+  margin-right: 10px;
 }
 form {
-position: absolute;
-width: 550px;
-top: 55%;
-left: 50%;
-transform: translate(-50%, -50%);
-border: 1px solid #ccc;
-border-radius: 25px;
-padding: 1rem;
+  position: absolute;
+  width: 550px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 1rem;
 }
 .form-control {
-display: block;
-margin-bottom: 1rem;
+  display: block;
+  margin-bottom: 1rem;
 }
 label {
-display: block;
-float:left;
-margin-bottom: 0.5rem;
+  display: block;
+  float: left;
+  margin-bottom: 0.5rem;
 }
 input {
-width: 100%;
-height: 2rem;
-border-radius: 5px;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
 }
 button {
-background-color: cornflowerblue;
-color: #fff;
-border: none;
-outline: none;
-border-radius: 5px;
-cursor: pointer;
+  background-color: cornflowerblue;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .submit-btn {
-font-size: 16px;
-width: 200px;
-height: 50px;
-display: block;
-margin: 0 auto;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
 }
 table {
-border-collapse: collapse;
-width: 100%;
-margin-top: 5rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5rem;
 }
 th,
 td {
-text-align: left;
-padding: 8px;
+  text-align: left;
+  padding: 8px;
 }
 tr:nth-child(even) {
-background-color: #f2f2f2;
+  background-color: #dff5ff;
+}
+tr:nth-child(odd) {
+  background-color: #ffedd8;
 }
 th {
-background-color: #04aa6d;
-color: white;
+  background-color: #04aa6d;
+  color: white;
 }
 .update-btn,
 .delete-btn,
 .save-btn {
-width: 50px;
-height: 26px;
+  width: 75px;
+  height: 30px;
 }
 .update-btn,
 .save-btn {
-margin-right: 10px;
+  margin-right: 10px;
 }
 .delete-btn {
-background-color: rgb(255, 221, 0);
+  background-color: rgb(255, 0, 0);
 }
 .update-btn {
-    background-color: rgb(204, 255, 0);
-    }
+  background-color: rgb(0, 0, 255);
+}
 .save-btn {
-background-color: #04aa6d;
+  background-color: #04aa6d;
 }
 /* Apply styles to the form container */
 form {
-position: absolute;
-width: 550px;
-top: 55%;
-left: 50%;
-transform: translate(-50%, -50%);
-border: 1px solid #ccc;
-border-radius: 25px;
-padding: 1rem;
-background-color:white;
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-transition: box-shadow 0.3s;
-overflow: hidden; /* Hide any overflow for the
+  position: absolute;
+  width: 550px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s;
+  overflow: hidden; /* Hide any overflow for the
 pseudo-element */
-z-index: 1; /* Ensure the pseudo-element appears beneath the
+  z-index: 1; /* Ensure the pseudo-element appears beneath the
 form content */
 }
 /* Add glowing background to the form */
 /* Adjust the glow intensity on hover */
 form:hover {
-box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
 }
 /* Transition for the box-shadow change on hover */
 form:hover::before {
-transform: scale(1.4);
+  transform: scale(1.4);
 }
 /* Apply styles to the button */
 button {
-background-color: cornflowerblue;
-color: #fff;
-border: none;
-outline: none;
-border-radius: 5px;
-cursor: pointer;
-transition: box-shadow 0.5s; /* Add transition for box
+  background-color: cornflowerblue;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.5s; /* Add transition for box
 shadow change */
-position: relative; /* Add relative positioning for
+  position: relative; /* Add relative positioning for
 pseudo-element */
-overflow: hidden; /* Hide any overflow of pseudo-element
+  overflow: hidden; /* Hide any overflow of pseudo-element
 */
 }
 /* Add styles for button hover */
 button:hover {
-box-shadow: 0 0 20px 10px lightblue; /* Add a glow effect
+  box-shadow: 0 0 20px 10px lightblue; /* Add a glow effect
 outside the button */
 }
